@@ -15,5 +15,6 @@ class DatabaseSeeder extends Seeder
         $this->call(ShirtSeeder::class);
         $this->call(UserSeeder::class);
 
+
     }
 }
