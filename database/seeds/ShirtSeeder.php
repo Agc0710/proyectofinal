@@ -12,6 +12,7 @@ class ShirtSeeder extends Seeder
      */
     public function run()
     {
+        DB::statement('SET FOREIGN_KEY_CHECKS = 0;');
         DB::table('shirts')-> insert ([
             'shirt_name'=>'Camiseta polo manga corta',
             'shirt_value'=>100000,
@@ -33,5 +34,7 @@ class ShirtSeeder extends Seeder
             'category_id'=> 6,
             'status'=> false,
         ]);
+
+
     }
 }
